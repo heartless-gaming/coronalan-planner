@@ -11,24 +11,36 @@ const greetingMessage = function () {
 
 const dragElmnts = () => {
 
-  const games = document.querySelector('.game')
+  const games = document.querySelectorAll('.game')
   const dropboxs = document.querySelectorAll('.dropbox')
-  console.log(games)
+  // console.log(games)
+
+  function dragstart(event) {
+    console.log(event.target.id)
+    event.dataTransfer.setData('text', event.target.id)
+  }
   function dragover(event) {
     event.preventDefault()
   }
 
-  function dragcenter(event) {
+  function dragenter(event) {
     event.preventDefault()
   }
 
-  function drop() {
-    this.append(games)
+  function drop(event) {
+    event.preventDefault()
+    const draggedGame = event.dataTransfer.getData('text')
+    console.log(draggedGame)
+    this.append(document.getElementById(draggedGame))
   }
+
+  games.forEach((game) => {
+    game.addEventListener('dragstart', dragstart)
+  })
 
   dropboxs.forEach((dropbox) => {
     dropbox.addEventListener('dragover', dragover)
-    dropbox.addEventListener('dragcenter', dragcenter)
+    dropbox.addEventListener('dragenter', dragenter)
     dropbox.addEventListener('drop', drop)
   })
 
