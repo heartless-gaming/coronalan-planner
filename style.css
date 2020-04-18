@@ -47,7 +47,7 @@ body {
   flex-grow: 1;
 }
 
-.dropbox {
+.time-box {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid rgb(143, 145, 143);
@@ -66,6 +66,7 @@ body {
 .game-list {
   display: flex;
   flex-wrap: wrap;
+  min-height: 61px;
 }
 
 .game {

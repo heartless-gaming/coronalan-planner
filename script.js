@@ -12,7 +12,7 @@ const greetingMessage = function () {
 const dragElmnts = () => {
 
   const games = document.querySelectorAll('.game')
-  const dropboxs = document.querySelectorAll('.dropbox')
+  const dropboxs = document.querySelectorAll('.js-dropbox')
   // console.log(games)
 
   function dragstart(event) {
@@ -30,7 +30,6 @@ const dragElmnts = () => {
   function drop(event) {
     event.preventDefault()
     const draggedGame = event.dataTransfer.getData('text')
-    console.log(draggedGame)
     this.append(document.getElementById(draggedGame))
   }
 
