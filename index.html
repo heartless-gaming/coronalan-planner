@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Coronalan Planner</title>
   <link rel="stylesheet" href="style.css">
@@ -15,16 +16,9 @@
   <main class="main-content wrapper">
     <h2 class="game-list-title">Glisser les jeux dans les horaires souhaitez</h2>
     <div class="game-list js-dropbox">
-      <p class="game" draggable="true" id="gmod">Gmod</p>
-      <p class="game" draggable="true" id="planetside">Planetside2</p>
-      <p class="game" draggable="true" id="insurgency">Insurgency</p>
-      <p class="game" draggable="true" id="left4dead">Left 4 Dead</p>
-      <p class="game" draggable="true" id="rust">RUST</p>
-      <p class="game" draggable="true" id="viscera">Viscera</p>
+
       <p class="game" draggable="true" id="kf2">Killing Floor 2</p>
-      <p class="game" draggable="true" id="rocketleague">Rocket League</p>
-      <p class="game" draggable="true" id="csgo">CSGO</p>
-      <p class="game" draggable="true" id="minecraft">Minecraft</p>
+
     </div>
     <div class="planning-day-container">
       <div class="planning-day">
@@ -32,23 +26,34 @@
         <div>
           <div>
             <p>10h à 13h</p>
-            <div class="time-box js-dropbox"></div>
+            <div class="time-box js-dropbox">
+              <p class="game" draggable="true" id="gmod">Gmod</p>
+            </div>
           </div>
           <div>
             <p>14h à 16h</p>
-            <div class="time-box js-dropbox"></div>
+            <div class="time-box js-dropbox">
+              <p class="game" draggable="true" id="planetside">Planetside2</p>
+            </div>
           </div>
           <div>
             <p>16h à 18h</p>
-            <div class="time-box js-dropbox"></div>
+            <div class="time-box js-dropbox">
+              <p class="game" draggable="true" id="insurgency">Insurgency</p>
+              <p class="game" draggable="true" id="dayofinfamy">Day Of infamy</p>
+            </div>
           </div>
           <div>
             <p>18h à 20h</p>
-            <div class="time-box js-dropbox"></div>
+            <div class="time-box js-dropbox">
+              <p class="game" draggable="true" id="left4dead">Left 4 Dead</p>
+            </div>
           </div>
           <div>
             <p>21h à 23h</p>
-            <div class="time-box js-dropbox"></div>
+            <div class="time-box js-dropbox">
+              <p class="game" draggable="true" id="rust">RUST</p>
+            </div>
           </div>
         </div>
       </div>
@@ -57,36 +62,45 @@
         <div>
           <div>
             <p>10h à 13h</p>
-            <div class="time-box js-dropbox"></div>
+            <div class="time-box js-dropbox">
+              <p class="game" draggable="true" id="viscera">Viscera</p>
+            </div>
           </div>
           <div>
             <p>14h à 16h</p>
-            <div class="time-box js-dropbox"></div>
-          </div>
-          <div>
-            <p>16h à 18h</p>
-            <div class="time-box js-dropbox"></div>
-          </div>
-          <div>
-            <p>18h à 20h</p>
-            <div class="time-box js-dropbox"></div>
-          </div>
-          <div>
-            <p>21h à 23h</p>
-            <div class="time-box js-dropbox"></div>
+            <div class="time-box js-dropbox">
+                <p class="game" draggable="true" id="kf2">Killing Floor 2</p>
+              </div>
+            <div>
+              <p>16h à 18h</p>
+              <div class="time-box js-dropbox">
+                <p class="game" draggable="true" id="rocketleague">Rocket League</p></div>
+              </div>
+            </div>
+            <div>
+              <p>18h à 20h</p>
+              <div class="time-box js-dropbox">
+                <p class="game" draggable="true" id="csgo">CSGO</p>
+              </div>
+            </div>
+            <div>
+              <p>21h à 23h</p>
+              <div class="time-box js-dropbox">
+                <p class="game" draggable="true" id="minecraft">Minecraft</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="page-foot">
-    <p>
-      <a href="https://steamcommunity.com/id/heartless-gaming">Steam</a> -
-      <a href="https://www.reddit.com/r/heartlessgaming">Reddit</a> -
-      <a href="https://twitter.com/hlsgaming">Twitter</a> -
-      <a href="https://www.facebook.com/heartlessgamingfr">Facebook</a>
-    </p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+    </main>
+    <footer class="page-foot">
+      <p>
+        <a href="https://steamcommunity.com/id/heartless-gaming">Steam</a> -
+        <a href="https://www.reddit.com/r/heartlessgaming">Reddit</a> -
+        <a href="https://twitter.com/hlsgaming">Twitter</a> -
+        <a href="https://www.facebook.com/heartlessgamingfr">Facebook</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  </html>
