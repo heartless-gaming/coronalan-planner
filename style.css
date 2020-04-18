@@ -24,6 +24,26 @@ body {
   max-width: 800px;
 }
 
+.m10 {
+  margin: 10px;
+}
+
+.svg-info {
+  max-width: 50px;
+  fill: #1f85a4;
+  margin-right: 20px;
+  /*flex-grow: 1;*/
+}
+
+.alert {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: rgb(237, 237, 237);
+  color: rgba(30, 35, 38);
+  border-radius: 5px;
+}
+
 .page-head {
   padding: 2rem 10px;
   background: linear-gradient(180deg,#0f2027,#203a43,#2c5364);
@@ -33,6 +53,7 @@ body {
 }
 
 .main-content {
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -40,7 +61,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  margin: 0 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 40px;
 }
 
 .planning-day {
@@ -54,13 +78,6 @@ body {
   border-radius: 3px;
   background-color: rgb(237, 237, 237);
   min-height: 63px;
-}
-
-.game-list-title {
-  margin-top    : 40px;
-  margin-left   : 10px;
-  margin-right  : 10px;
-  margin-bottom : 10px;
 }
 
 .game-list {
@@ -82,7 +99,13 @@ body {
 .page-foot {
   position: relative;
   background-color: rgba(26, 30, 33);
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  clip-path: polygon(0 4vw,100% 0,100% 100%,0 100%);
+}
+
+.mentra {
+  margin: 40px 10px;
+  color: #b22222;
+  text-align: center;
+  letter-spacing: 2px;
 }
