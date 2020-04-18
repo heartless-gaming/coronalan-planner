@@ -1,5 +1,5 @@
 const dragElmnts = () => {
-  console.log('topkek')
+  console.log('Hello There!')
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
