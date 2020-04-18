@@ -9,16 +9,16 @@ const greetingMessage = function () {
   console.log('  # # #   ')
 }
 
+function dragstart(event) {
+  event.dataTransfer.setData('text', event.target.id)
+}
+
 const dragElmnts = () => {
 
-  const games = document.querySelectorAll('.game')
+  const games = document.querySelectorAll('.js-game')
   const dropboxs = document.querySelectorAll('.js-dropbox')
-  // console.log(games)
 
-  function dragstart(event) {
-    console.log(event.target.id)
-    event.dataTransfer.setData('text', event.target.id)
-  }
+
   function dragover(event) {
     event.preventDefault()
   }
@@ -42,10 +42,34 @@ const dragElmnts = () => {
     dropbox.addEventListener('dragenter', dragenter)
     dropbox.addEventListener('drop', drop)
   })
+}
 
+
+const addGame = () => {
+  const addGameInput = document.querySelector('.js-addGameInput')
+  const addGameBtn = document.querySelector('.js-addGameBtn')
+  const gameList = document.querySelector('.game-list')
+
+  const newGame = (game) => {
+    if (game.length > 0) {
+      const node = document.createElement("p");
+      node.id = Date.now()
+      node.classList.add('btn', 'js-game')
+      node.setAttribute('draggable', true)
+      node.textContent = game
+      node.addEventListener('dragstart', dragstart)
+
+      gameList.append(node)
+    }
+  }
+
+  addGameBtn.addEventListener('click', (event) => {
+    newGame(addGameInput.value)
+  })
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
   greetingMessage()
   dragElmnts()
+  addGame()
 });

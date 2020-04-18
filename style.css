@@ -28,11 +28,19 @@ body {
   margin: 10px;
 }
 
+.mr10 {
+  margin-right: 10px;
+}
+
 .svg-info {
   max-width: 50px;
   fill: #1f85a4;
   margin-right: 20px;
-  /*flex-grow: 1;*/
+}
+
+.svg-plus {
+  max-width: 13px;
+  fill: #ededed;
 }
 
 .alert {
@@ -54,7 +62,11 @@ body {
 
 .main-content {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+}
+
+.add-game {
+  display: flex;
 }
 
 .planning-day-container {
@@ -64,7 +76,7 @@ body {
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .planning-day {
@@ -84,16 +96,29 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-height: 61px;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: rgba(26, 30, 33);
 }
 
-.game {
+input {
+  border-radius: 3px;
+  padding: 10px;
+  border: 0px solid rgba(143, 145, 143, 1);
+}
+
+.btn {
   background-color: rgb(212, 38, 39);
   border-radius: 3px;
   margin: 10px;
+  border: 0;
   padding: 10px 15px;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  color: rgb(237, 237, 237);
+  font-size: 16px;
+  letter-spacing: .05rem;
 }
 
 .page-foot {
