@@ -1,5 +1,6 @@
-# coronalan-planner
+# [coronalan-planner](https://heartlessgaming.com/coronalan-planner/)
 A web page to plan the schedule of games to play for the Heartless Gaming Coronalan
+https://heartlessgaming.com/coronalan-planner
 
 # Usage
 It's vanilla HTML, CSS & Javascript, just open it in a browser !
